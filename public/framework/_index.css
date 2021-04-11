@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+@import url( "./container.css" );
+@import url( "./navigation.css" );
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body.theme_light {
+  background: white;
+  color: black;
+}
+
+body.theme_dark {
+  background: black;
+  color: white;
+}
