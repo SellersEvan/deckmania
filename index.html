@@ -1,6 +1,8 @@
 <head>
     <link rel="stylesheet" href="public/framework/_index.css">
     <link rel="stylesheet" href="public/index.css">
+    <script src="public/framework/_index.js"></script>
+    <script src="public/gameData.js"></script>
     <script src="public/script.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -8,7 +10,7 @@
 <body class="theme_light">
 
 
-    <div class="page_home">
+    <div class="page hide" page="home">
         <div class="navigation sticky">
             <div class="ribbon">
                 <div class="container">
@@ -44,152 +46,14 @@
             </div>
         </div>
 
-        <div class="container">
-            <h3>Top Decks</h3>
-            <div class="deck-selection">
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Find A Place That...</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Old Stangers</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couples Say What?</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Random Trivia (Pack 1)</p>
-                </a>
-                <a class="deck">
-                    <p style="width: 1px;"></p>
-                </a>
-            </div>
-            <h3>Family Games</h3>
-            <div class="deck-selection">
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Old Strangers</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <div class="badge">18+</div>
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <p style="width: 1px;"></p>
-                </a>
-            </div>
-            <h3>Adult Games</h3>
-            <div class="deck-selection">
-                <a class="deck">
-                    <div class="banner">
-                        <div class="badge">18+</div>
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Old Strangers</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <div class="badge">18+</div>
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <p style="width: 1px;"></p>
-                </a>
-            </div>
-            <h3>Trivia Games</h3>
-            <div class="deck-selection">
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Old Strangers</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <div class="banner">
-                        <img src="https://ouch-cdn.icons8.com/preview/74/e2d1eb7c-5108-4fb7-894b-8c85a93a68d3.png"
-                            alt="" srcset="">
-                    </div>
-                    <p>Couple Drinking</p>
-                </a>
-                <a class="deck">
-                    <p style="width: 1px;"></p>
-                </a>
-            </div>
+        <div class="container" id="homePageDeckLists">
+            <!-- Insert Decks Here -->
         </div>
     </div>
 
 
 
-    <div class="page_game_preview" hidden>
+    <div class="page hide" page="preview">
         <div class="navigation sticky">
             <div class="ribbon">
                 <div class="container">
@@ -204,10 +68,9 @@
                             </svg>
                         </div>
                         <div class="ribbon-item showScrolled ribbon-item-grow">
-                            <p class="text-center">Old Strangers</p>
+                            <p class="text-center" id="previewPageTitleRibbon">Old Strangers</p>
                         </div>
-                        <div class="ribbon-item ribbon-item-hoverable" id="navActionSearch"
-                            style="margin-right: 0.5rem;">
+                        <div class="ribbon-item ribbon-item-hoverable pad-right" id="navActionSearch">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="gray" stroke-width="2" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                                 <polygon
@@ -215,8 +78,7 @@
                                 </polygon>
                             </svg>
                         </div>
-                        <div class="ribbon-item ribbon-item-hoverable" id="navActionSearch"
-                            style="margin-right: 0.5rem;">
+                        <div class="ribbon-item ribbon-item-hoverable pad-right" id="navActionSearch">
                             <svg viewBox="0 0 24 24" width="24" height="24" stroke="gray" stroke-width="2" fill="none"
                                 stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
                                 <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
@@ -240,13 +102,13 @@
             </div>
             <div class="container">
                 <div class="header small">
-                    <div class="badge">18+</div><br>
-                    <h1>Old Strangers</h1>
+                    <div class="badge" id="previewPage18Plus">18+</div><br>
+                    <h1 id="previewPageTitle">Old Strangers</h1>
                     <h2>180 Cards</h2>
                 </div>
             </div>
             <div class="container">
-                <p class="mute">
+                <p class="mute" id="previewPageDescription">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -262,7 +124,7 @@
     </div>
 
 
-    <div class="page_game" hidden>
+    <div class="page hide" page="game" hidden>
         <div class="navigation sticky">
             <div class="ribbon">
                 <div class="container">
