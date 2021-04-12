@@ -6,23 +6,22 @@ router.get( "/", function( req, router ) {
     ViewPage.Home();
 }).setName( "home" );
 
+// Home Page
+router.get( "/search", function( req, router ) {
+    ViewPage.Search();
+}).setName( "search" );
 
 // Preview Page of Game // ${req.param.game}
-router.get( "/{game}/preview", function( req, router ) {
+router.get( "/deck/{game}", function( req, router ) {
     ViewPage.GamePreview();
+    Render.GamePreview( req.param.game );
 }).setName( "preview-game" );
 
 
 // Peak at Game Questions
-router.get( "/{game}/peak", function( req, router ) {
+router.get( "/deck/{game}/peak", function( req, router ) {
     ViewPage.GamePeak();
 }).setName( "peak-game" );
-
-
-// Play the Game
-router.get( "/{game}/play", function( req, router ) {
-    ViewPage.GamePlay();
-}).setName( "play-game" );
 
 
 router.notFoundHandler( function() {
@@ -32,4 +31,6 @@ router.notFoundHandler( function() {
 
 window.addEventListener( "load", () => {
     router.init();
+    Render.Home();
+    // Render.Search();
 });

@@ -3,7 +3,9 @@
     <link rel="stylesheet" href="/public/index.css">
     <script src="https://unpkg.com/@kodnificent/sparouter@1.1.0/dist/sparouter.min.js"></script>
     <script src="/public/framework/_index.js"></script>
+    <script src="/public/gameData.js"></script>
     <script src="/public/scripts/ViewPages.js"></script>
+    <script src="/public/scripts/Render.js"></script>
     <script src="/public/scripts/Router.js"></script>
     <!-- <script src="public/gameData.js"></script> -->
     <!-- <script src="public/script.js"></script> -->
@@ -120,14 +122,14 @@
                 </p>
                 <br>
                 <div class="controller">
-                    <button>Play Deck</button>
+                    <button id="previewPagePlay">Play Deck</button>
                 </div>
             </div>
         </div>
     </div>
 
 
-    <div class="page hide" page="play" hidden>
+    <div class="page hide" page="play">
         <div class="navigation sticky">
             <div class="ribbon">
                 <div class="container">
