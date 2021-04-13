@@ -1,16 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000
-const path = require( "path" )
+const express = require( "express" );
+const path    = require( "path" );
+const app     = express();
 
-app.use( "/public", express.static('public'))
+app.set( "views", path.join( __dirname, "views" ) );
+app.set( "view engine", "ejs" );
+app.use( "/public", express.static( "public" ) );
 
-app.get( '/*', (req, res) => {
-    res.sendFile('index.html', {
-        root: path.join(__dirname, './')
-    })
-})
+app.get( "/deck/:game", function( req, res ) {
+	res.render( "game", { name: "game" } );
+});
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
-})
+app.listen( 3000 );
