@@ -13,6 +13,11 @@
     font-weight: 100;
 }
 
+/* Page Error */
+#page_error.container {
+    margin-top: 8rem;
+}
+
 /* Button Button Controller */
 .controller {
     display: flex;
@@ -21,7 +26,7 @@
     bottom: 1rem;
 }
 
-.controller button {
+.controller button, .controller a {
     width: 100%;
 }
 

@@ -4,6 +4,8 @@
         "id": "example_1",
         "description": "This is a descritpion of game 1",
         "shuffle": true,
-        "is18Plus": false
+        "allowPreview": true,
+        "is18Plus": true,
+        "questions": "questions/"
     }
 ]
