@@ -3,18 +3,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include( "partials/header.ejs" ) %>
     <title>Deckmainia | Name</title>
 </head>
     <body>
-        <div class="container">
+        <%- include( "navigation/game.ejs" ) %>
+        <div class="container" id="page_game">
             <div class="header small">
-                <div class="badge" id="previewPage18Plus">18+</div><br>
-                <h1 id="previewPageTitle">Old Strangers</h1>
-                <h2>180 Cards</h2>
+                <div class="badge">18+</div>
+                <h1>Old Strangers</h1>
+                <h2 class="mute">180 Cards</h2>
             </div>
-        </div>
-        <div class="container">
-            <p class="mute" id="previewPageDescription">
+            <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                 et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -23,7 +23,7 @@
             </p>
             <br>
             <div class="controller">
-                <button id="previewPagePlay">Play Deck</button>
+                <button>Play Deck</button>
             </div>
         </div>
     </body>

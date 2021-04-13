@@ -1,0 +1,37 @@
+/* Game Page */
+#page_game.container {
+    margin-top: 8rem;
+}
+
+#page_game h1 {
+    margin: 0.5rem 0 0.2rem 0;
+}
+
+#page_game h2 {
+    margin: 0 0 2rem 0;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* Button Button Controller */
+.controller {
+    display: flex;
+    width: calc( 100% - 2rem );
+    position: absolute;
+    bottom: 1rem;
+}
+
+.controller button {
+    width: 100%;
+}
+
+
+@media ( min-width : 600px ){
+    .controller {
+        position: relative;
+    }
+
+    .controller button {
+        max-width: 200px;
+    }
+}
