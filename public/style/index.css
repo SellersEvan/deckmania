@@ -40,3 +40,32 @@
         max-width: 200px;
     }
 }
+
+
+/* Gameboard */
+.gameboard {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 99999;
+    background: white;
+}
+
+.gameboard .question-container {
+    margin: 20rem 0 2rem 0;
+}
+
+.gameboard .question-container .question .question-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.gameboard .question-container .question {
+    display: none;
+}
+
+.gameboard .question-container .question.question-active {
+    display: block;
+}

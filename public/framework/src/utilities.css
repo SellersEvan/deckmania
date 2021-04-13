@@ -9,3 +9,8 @@
 .mute {
     opacity: 0.5;
 }
+
+.text-center {
+    width: 100%;
+    text-align: center;
+}

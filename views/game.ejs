@@ -7,17 +7,18 @@
     <title>Deckmainia | Name</title>
 </head>
     <body>
+        <%- include( "partials/gameboard.ejs" ) %>
         <%- include( "navigation/game.ejs" ) %>
         <div class="container" id="page_game">
             <div class="header small">
-                <% if ( is18Plus == true ) { %>
+                <% if ( basic.is18Plus == true ) { %>
                     <div class="badge">18+</div>
                 <% } %>
-                <h1><%= name %></h1>
-                <h2 class="mute">180 Cards</h2>
+                <h1><%= basic.name %></h1>
+                <h2 class="mute"><%= basic.size %> Cards</h2>
             </div>
             <p>
-                <%= description %>
+                <%= basic.description %>
             </p>
             <br>
             <div class="controller">
