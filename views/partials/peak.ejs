@@ -1,35 +1,30 @@
-<div class="gameboard container hide">
+<div class="peak container hide">
     <div class="navigation sticky">
         <div class="ribbon">
             <div class="container">
                 <div class="ribbon-container">
-                    <div class="ribbon-item ribbon-item-hoverable" onclick="CloseGameBoard()">
+                    <div class="ribbon-item ribbon-item-hoverable" id="navActionBack" onclick="ClosePeak()">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left m-3 mr-0" style="height: 1.5rem;">
                             <line x1="19" y1="12" x2="5" y2="12"></line>
                             <polyline points="12 19 5 12 12 5"></polyline>
                         </svg>
                     </div>
-                    <div class="ribbon-item ribbon-item-grow pad-left">
-                        <p><%= basic.name %></p>
+                    <div class="ribbon-item ribbon-item-grow pad-left showScrolled">
+                        <p><%= basic.name %>'s Questions</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="question-container">
-        <div class="card-control-overlay">
-            <div class="prev-overlay overlay-text" onclick="prevCard()">Back</div>
-            <div class="space-overlay" onclick="PreviewOverlay()"></div>
-            <div class="next-overlay overlay-text" onclick="nextCard()">Next</div>
+    <div class="peak-preview container">
+        <div class="header small" style="margin-top: 6rem;">
+            <h1><%= basic.name %>'s Questions</h1>
+            <h2 class="mute"><%= basic.size %> Cards</h2>
         </div>
         <% for ( var i = 0; i < questions.length; i++ ) { %>
-            <div class="question <%= ( i == 0 ) ? " question-active" : " " %>" data-card="<%= i %>">
+            <div class="question">
                 <div class="question-text"><%= questions[ i ].question %></div>
             </div>
         <% } %>
-    </div>
-    <div class="controller">
-        <button onclick="prevCard()" style="margin-right: 1rem;">Back</button>
-        <button onclick="nextCard()">Next</button>
     </div>
 </div>

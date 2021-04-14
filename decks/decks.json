@@ -3,7 +3,6 @@
         "name": "Example 1",
         "id": "example_1",
         "description": "This is a descritpion of game 1",
-        "allowPreview": true,
         "is18Plus": true,
         "questions": "example_1.json"
     }

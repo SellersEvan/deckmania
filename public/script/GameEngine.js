@@ -14,6 +14,13 @@ function CloseGameBoard() {
     document.querySelector( ".gameboard.container" ).classList.add( "hide" );
 }
 
+function OpenPeak() {
+    document.querySelector( ".peak.container" ).classList.remove( "hide" );
+}
+
+function ClosePeak() {
+    document.querySelector( ".peak.container" ).classList.add( "hide" );
+}
 
 function nextCard() {
     document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
