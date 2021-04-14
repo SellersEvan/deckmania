@@ -26,20 +26,16 @@
     bottom: 0;
     margin: 0 1rem 1rem 1rem;
     background: white;
+    justify-content: center;
 }
 
 .controller button, .controller a {
     width: 100%;
 }
 
-
 @media ( min-width : 600px ){
-    .controller {
-        position: relative;
-    }
-
     .controller button {
-        max-width: 200px;
+        max-width: calc( 150px + 1rem );
     }
 }
 
@@ -76,6 +72,14 @@
     box-shadow: 1px 1px 7px 2px rgb(0 0 0 / 10%);
     z-index: 9999;
     transition: all 0.2s;
+}
+@media ( min-width : 600px ){
+    .gameboard .question-container {
+        margin: 2rem auto;
+        width: 300px;
+        height: 400px;
+        flex-grow: 0;
+    }
 }
 
 .gameboard .question-container.flip {
