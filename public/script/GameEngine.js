@@ -5,6 +5,17 @@ function PreviewOverlay() {
     }, 500 );
 }
 
+function Share() {
+    navigator
+        .share({
+            title: document.title,
+            text: document.title,
+            url: window.location.href
+        })
+        .then(() => console.log('Successful share! 🎉'))
+        .catch(err => console.error(err));
+}
+
 function OpenGameBoard() {
     PreviewOverlay();
     document.querySelector( ".gameboard.container" ).classList.remove( "hide" );
