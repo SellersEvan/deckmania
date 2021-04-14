@@ -1,3 +1,35 @@
+window.addEventListener( "load", () => {
+    document.querySelector( "#search-input" ).addEventListener( "keyup", () => {
+        let value = document.querySelector( "#search-input" ).value.toLowerCase();
+
+        if ( value == "" ) {
+            document.querySelectorAll( ".search .deck" ).forEach( elm => {
+                elm.style.display = "block";
+            });
+        } else {
+            document.querySelectorAll( ".search .deck" ).forEach( elm => {
+                console.log( elm.dataset.name.toLowerCase() )
+                if ( elm.dataset.name.toLowerCase().includes( value ) ) {
+                    elm.style.display = "block";
+                } else if ( elm.dataset[ "description" ].toLowerCase().includes( value ) ) {
+                    elm.style.display = "block";
+                } else {
+                    elm.style.display = "none";
+                }
+            });
+        }
+    });
+});
+
+function ClearSearch() {
+    document.querySelector( "#search-input" ).value = "";
+    document.querySelectorAll( ".search .deck" ).forEach( elm => {
+        elm.style.display = "block";
+    });
+    document.querySelector( "#search-input" ).focus();
+}
+
+
 function PreviewOverlay() {
     document.querySelector( ".card-control-overlay" ).classList.add( "preview" );
     setTimeout( () => {

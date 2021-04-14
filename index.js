@@ -9,7 +9,7 @@ app.set( "view engine", "ejs" );
 app.use( "/public", express.static( "public" ) );
 
 
-app.get( "/deck/:id", function( req, res ) {
+app.get( "/deck/:id", ( req, res ) => {
 
 	GAMES.forEach( game => {
 		if ( game.id == req.params.id ) {
@@ -33,6 +33,11 @@ app.get( "/deck/:id", function( req, res ) {
 			});
 	}
 	
+});
+
+
+app.get( "/search", ( req, res ) => {
+	res.render( "search", { games: GAMES } );
 });
 
 app.listen( 3000 );

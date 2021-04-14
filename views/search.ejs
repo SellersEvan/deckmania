@@ -1,11 +1,41 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deckmania | Search</title>
-</head>
-    <body>
-        
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include( "partials/header.ejs" ) %>
+        <title>Deckmainia Search</title>
+    </head>
+    <body class="theme_light">
+        <div class="navigation sticky">
+            <div class="ribbon">
+                <div class="container">
+                    <div class="ribbon-container">
+                        <a href="/" class="ribbon-item ribbon-item-hoverable" id="navActionBack">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left m-3 mr-0" style="height: 1.5rem;">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </a>
+                        <div class="ribbon-item ribbon-item-grow">
+                            <input type="text" placeholder="Search..." id="search-input" autofocus>
+                        </div>
+                        <div class="ribbon-item ribbon-item-hoverable pad-right" onclick="ClearSearch()">
+                            <svg viewbox="0 0 24 24" width="24" height="24" stroke="gray" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container search">
+            <% for ( let i = 0; i < games.length; i++ ) { %>
+                <div class="deck" data-name="<%= games[i].name %>" data-description="<%= games[i].description %>">
+                    <div class="title"><%= games[i].name %></div>
+                </div>
+            <% } %>
+        </div>
     </body>
 </html>

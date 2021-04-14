@@ -5,5 +5,29 @@
         "description": "This is a descritpion of game 1",
         "is18Plus": true,
         "questions": "example_1.json"
+    }, {
+        "name": "Example 2",
+        "id": "example_2",
+        "description": "This is a descritpion of game 2",
+        "is18Plus": true,
+        "questions": "example_1.json"
+    }, {
+        "name": "Example 2",
+        "id": "example_2",
+        "description": "This is a descritpion of game 3",
+        "is18Plus": true,
+        "questions": "example_1.json"
+    }, {
+        "name": "Example 2",
+        "id": "example_2",
+        "description": "This is a descritpion of game 3",
+        "is18Plus": true,
+        "questions": "example_1.json"
+    }, {
+        "name": "Example 2",
+        "id": "example_2",
+        "description": "This is a descritpion of game 3",
+        "is18Plus": true,
+        "questions": "example_1.json"
     }
 ]
