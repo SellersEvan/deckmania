@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Popular",
+        "decksID": [ "example_1", "example_2", "example_3", "example_4" ]
+    },
+    {
+        "title": "Adult Games",
+        "decksID": [ "example_1", "example_2", "example_3" ]
+    },
+    {
+        "title": "Family Games",
+        "decksID": [ "example_1", "example_2" ]
+    },
+    {
+        "title": "Never have I ever...",
+        "decksID": [ "example_1", "example_2" ]
+    },
+    {
+        "title": "What am I?",
+        "decksID": [ "example_1", "example_2" ]
+    },
+    {
+        "title": "Spotted",
+        "decksID": [ "example_1", "example_2" ]
+    }
+]

@@ -32,9 +32,13 @@
         </div>
         <div class="container search">
             <% for ( let i = 0; i < games.length; i++ ) { %>
-                <div class="deck" data-name="<%= games[i].name %>" data-description="<%= games[i].description %>">
+                <a class="deck" data-name="<%= games[i].name %>" data-description="<%= games[i].description %>" href="/deck/<%= games[i].id %>">
+                    <% if ( games[ i ].is18Plus == true ) { %>
+                        <div class="badge">18+</div>
+                    <% } %>
+                    <img class="emoji" src="<%= games[ i ].emoji %>">
                     <div class="title"><%= games[i].name %></div>
-                </div>
+                </a>
             <% } %>
         </div>
     </body>

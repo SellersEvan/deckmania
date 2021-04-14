@@ -1,11 +1,72 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deckmania | Explore</title>
-</head>
-    <body>
-        
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <%- include( "partials/header.ejs" ) %>
+        <title>Deckmainia | Explore</title>
+    </head>
+    <body class="theme_light">
+        <div class="navigation sticky">
+            <div class="ribbon">
+                <div class="container">
+                    <div class="ribbon-container">
+                        <div class="ribbon-item ribbon-item-hoverable" onclick="window.history.back();">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24" fill="none" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left m-3 mr-0" style="height: 1.5rem;">
+                                <line x1="19" y1="12" x2="5" y2="12"></line>
+                                <polyline points="12 19 5 12 12 5"></polyline>
+                            </svg>
+                        </div>
+                        <div class="ribbon-item showScrolled ribbon-item-grow">
+                            <p>Explore</p>
+                        </div>
+                        <div class="ribbon-item ribbon-item-hoverable pad-right" onclick="Share()">
+                            <svg viewbox="0 0 24 24" width="24" height="24" stroke="gray" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+                                <polyline points="16 6 12 2 8 6"></polyline>
+                                <line x1="12" y1="2" x2="12" y2="15"></line>
+                            </svg>
+                        </div>
+                        <div class="ribbon-item ribbon-item-hoverable" id="navActiveMenu" onclick="OpenPeak()">
+                            <svg viewbox="0 0 24 24" width="24" height="24" stroke="gray" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="page_home">
+            <div class="header small">
+                <h1>Deckmainia Explore</h1>
+                <h2 class="mute">Cards</h2>
+            </div>
+
+            <br>
+
+            <% for ( let i = 0; i < sections.length; i++ ) { %>
+                <p class="m-0"><b><%= sections[ i ].title %></b></p>
+                <div class="deck-section">
+                    <div class="scroll">
+                        <% for ( let j = 0; j < sections[ i ].decks.length; j++ ) { %>
+                            <a class="deck" data-name="<%= sections[ i ].decks[ j ].name %>" data-description="<%= sections[ i ].decks[ j ].description %>" href="/deck/<%= sections[ i ].decks[ j ].id %>">
+                                <% if ( sections[ i ].decks[ j ].is18Plus == true ) { %>
+                                    <div class="badge">18+</div>
+                                <% } %>
+                                <img class="emoji" src="<%= sections[ i ].decks[ j ].emoji %>">
+                                <div class="title"><%= sections[ i ].decks[ j ].name %></div>
+                            </a>
+                        <% } %>
+                    </div>
+                </div>
+                <br>
+            <% } %>
+
+        </div>
     </body>
 </html>

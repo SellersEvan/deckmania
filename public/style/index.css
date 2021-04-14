@@ -211,8 +211,6 @@
     width: calc( 50% - 0.5rem );
     background-color: #000000;
     opacity: 1;
-    background-image: radial-gradient(#1c1c1c 1px, #000000 1px);
-    background-size: 20px 20px;
     box-shadow: 1px 1px 7px 2px rgb(0 0 0 / 10%);
     color: white;
     margin-bottom: 1rem;
@@ -221,6 +219,16 @@
     border-radius: 1rem;
     transition: transform 0.2s, box-shadow 0.2s;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.deck .emoji {
+    position: absolute;
+    right: -10%;
+    bottom: -10%;
+    filter: grayscale();
+    opacity: 0.5;
+    width: 75%;
 }
 
 .deck:hover {
@@ -230,10 +238,20 @@
 
 .deck .title {
     position: absolute;
-    bottom: 0;
+    top: 0;
     padding: 10%;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.deck .badge {
+    position: absolute;
+    margin: 5%;
+    color: black;
+    background: white;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
 .container.search {
@@ -282,4 +300,46 @@ input#search-input {
     border: none;
     padding: 0.35rem;
     font: inherit;
+}
+
+
+/* Deck Section */
+.deck-section {
+    display: flex;
+    margin: 0 -1rem;
+    overflow-x: auto;
+}
+
+.deck-section .scroll {
+    display: flex;
+    padding: 1rem;
+}
+
+.deck-section .scroll .deck {
+    min-width: 160px;
+    margin-right: 1rem;
+    padding-bottom: 250px;
+}
+
+/* @media (min-width: 768px) {
+    .deck-section .scroll .deck {
+        min-width: 160px;
+        margin-right: 1rem;
+        padding-bottom: 250px;
+    }
+}
+
+@media (min-width: 992px) {
+    .deck-section .scroll .deck {
+        min-width: 160px;
+        margin-right: 1rem;
+        padding-bottom: 250px;
+    }
+} */
+
+.deck-section .scroll .spacer {
+    display: block;
+    width: 1rem;
+    opacity: 0;
+    pointer-events: none;
 }
