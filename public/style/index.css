@@ -18,6 +18,14 @@
     left: 0;
 }
 
+@media ( min-width : 600px ){
+    #page_game .controller {
+        position: relative;
+        justify-content: start;
+        margin-left: 0;
+    }
+}
+
 /* Page Error */
 #page_error.container {
     margin-top: 8rem;
@@ -59,6 +67,13 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.gameboard.hide {
+    pointer-events: none;
+    opacity: 0;
 }
 
 .gameboard .navigation.sticky .ribbon {
@@ -66,6 +81,7 @@
 }
 
 .gameboard .question-container {
+    position: relative;
     background: whitesmoke;
     background-image: repeating-radial-gradient( circle at 0 0, transparent 0, rgb(255 255 255 / 20%) 20px ), repeating-linear-gradient( #ffffff55, rgb(165 165 165 / 20%) );
     margin: 0rem 1rem 1rem 1rem;
@@ -102,4 +118,46 @@
 
 .gameboard .question-container .question.question-active {
     display: block;
+}
+
+
+/* Card Control Overlay */
+.card-control-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc( 100% - 2rem );
+    height: calc( 100% - 2rem );
+    display: flex;
+    margin: 1rem;
+}
+
+.card-control-overlay .overlay-text {
+    border-radius: 1rem;
+    background: rgb(70 106 255 / 10%);
+    border: 1px solid rgb(70 106 255 / 10%);
+    backdrop-filter: blur( 1px );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.card-control-overlay.preview .overlay-text {
+    opacity: 1;
+}
+
+
+.card-control-overlay .prev-overlay {
+    width: 20%;
+}
+
+.card-control-overlay .space-overlay {
+    width: 15%;
+}
+
+.card-control-overlay .next-overlay {
+    width: 65%;
 }

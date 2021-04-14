@@ -63,6 +63,7 @@
     cursor: pointer;
 }
 
+.navigation .ribbon .container .ribbon-container .ribbon-item.ribbon-item-hoverable:hover,
 .theme_light .navigation .ribbon .container .ribbon-container .ribbon-item.ribbon-item-hoverable:hover {
     background: rgb(230, 230, 230);
 }

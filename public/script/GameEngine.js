@@ -1,15 +1,22 @@
-
+function PreviewOverlay() {
+    document.querySelector( ".card-control-overlay" ).classList.add( "preview" );
+    setTimeout( () => {
+        document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
+    }, 500 );
+}
 
 function OpenGameBoard() {
-    document.querySelector( ".gameboard.container" ).style.display = "flex";
+    PreviewOverlay();
+    document.querySelector( ".gameboard.container" ).classList.remove( "hide" );
 }
 
 function CloseGameBoard() {
-    document.querySelector( ".gameboard.container" ).style.display = "none";
+    document.querySelector( ".gameboard.container" ).classList.add( "hide" );
 }
 
 
 function nextCard() {
+    document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
     let card   = document.querySelector( ".question-container" );
     card.classList.add( "flip" );
     setTimeout( () => {
@@ -34,6 +41,7 @@ function nextCard() {
 }
 
 function prevCard() {
+    document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
     let card   = document.querySelector( ".question-container" );
     card.classList.add( "flip" );
     setTimeout( () => {

@@ -1,4 +1,4 @@
-<div class="gameboard container" style="display: none;">
+<div class="gameboard container hide">
     <div class="navigation sticky">
         <div class="ribbon">
             <div class="container">
@@ -34,6 +34,11 @@
         </div>
     </div>
     <div class="question-container">
+        <div class="card-control-overlay">
+            <div class="prev-overlay overlay-text" onclick="prevCard()">Back</div>
+            <div class="space-overlay" onclick="PreviewOverlay()"></div>
+            <div class="next-overlay overlay-text" onclick="nextCard()">Next</div>
+        </div>
         <% for ( var i = 0; i < questions.length; i++ ) { %>
             <div class="question <%= ( i == 0 ) ? " question-active" : " " %>" data-card="<%= i %>">
                 <div class="question-text"><%= questions[ i ].question %></div>
