@@ -74,6 +74,7 @@
 .gameboard.hide, .peak.hide {
     pointer-events: none;
     opacity: 0;
+    height: 0;
 }
 
 .gameboard .navigation.sticky .ribbon, .peak .navigation.sticky .ribbon {
@@ -202,4 +203,5 @@
     position: fixed;
     background: white;
     z-index: 999;
+    width: 100%;
 }
