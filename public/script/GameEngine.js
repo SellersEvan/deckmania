@@ -1,5 +1,12 @@
 
 
+function OpenGameBoard() {
+    document.querySelector( ".gameboard.container" ).style.display = "flex";
+}
+
+function CloseGameBoard() {
+    document.querySelector( ".gameboard.container" ).style.display = "none";
+}
 
 
 function nextCard() {

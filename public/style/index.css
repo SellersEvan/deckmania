@@ -13,6 +13,11 @@
     font-weight: 100;
 }
 
+#page_game .controller {
+    position: absolute;
+    left: 0;
+}
+
 /* Page Error */
 #page_error.container {
     margin-top: 8rem;
