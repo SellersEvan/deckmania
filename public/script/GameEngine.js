@@ -1,3 +1,6 @@
+
+console.log( "Yes, very aware that the code is crappy. It's fine it is a protoype I built in 4 hours. Check it out on github to update." );
+
 window.addEventListener( "load", () => {
     document.querySelector( "#search-input" ).addEventListener( "keyup", () => {
         let value = document.querySelector( "#search-input" ).value.toLowerCase();

@@ -55,4 +55,8 @@ app.get( "/", ( req, res ) => {
 	res.render( "index", { sections: HOME } );
 });
 
+app.get( "/options", ( req, res ) => {
+	res.render( "options" );
+});
+
 app.listen( 3000 );

@@ -251,7 +251,7 @@
     background: white;
     left: 0;
     bottom: 0;
-    z-index: 10;
+    z-index: 1;
 }
 
 .container.search {
@@ -316,26 +316,10 @@ input#search-input {
 }
 
 .deck-section .scroll .deck {
-    min-width: 160px;
+    min-width: 180px;
     margin-right: 1rem;
     padding-bottom: 250px;
 }
-
-/* @media (min-width: 768px) {
-    .deck-section .scroll .deck {
-        min-width: 160px;
-        margin-right: 1rem;
-        padding-bottom: 250px;
-    }
-}
-
-@media (min-width: 992px) {
-    .deck-section .scroll .deck {
-        min-width: 160px;
-        margin-right: 1rem;
-        padding-bottom: 250px;
-    }
-} */
 
 .deck-section .scroll .spacer {
     display: block;
