@@ -18,9 +18,9 @@ function CloseGameBoard() {
 function nextCard() {
     document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
     let card   = document.querySelector( ".question-container" );
-    card.classList.add( "flip" );
+    card.classList.add( "flip-next" );
     setTimeout( () => {
-        card.classList.remove( "flip" );
+        card.classList.remove( "flip-next" );
 
         let active = document.querySelector( ".question.question-active" );
         if ( active == null ) {
@@ -43,9 +43,9 @@ function nextCard() {
 function prevCard() {
     document.querySelector( ".card-control-overlay" ).classList.remove( "preview" );
     let card   = document.querySelector( ".question-container" );
-    card.classList.add( "flip" );
+    card.classList.add( "flip-prev" );
     setTimeout( () => {
-        card.classList.remove( "flip" );
+        card.classList.remove( "flip-prev" );
 
         let active = document.querySelector( ".question.question-active" );
         if ( active == null ) {

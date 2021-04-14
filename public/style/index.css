@@ -69,6 +69,7 @@
     flex-direction: column;
     opacity: 1;
     transition: opacity 0.2s;
+    overflow: hidden;
 }
 
 .gameboard.hide {
@@ -93,7 +94,9 @@
     box-shadow: 1px 1px 7px 2px rgb(0 0 0 / 10%);
     z-index: 9999;
     transition: all 0.2s;
+    cursor: pointer;
 }
+
 @media ( min-width : 600px ){
     .gameboard .question-container {
         margin: 2rem auto;
@@ -103,9 +106,28 @@
     }
 }
 
-.gameboard .question-container.flip {
-    transform: scaleX( 0 );
+.gameboard .question-container.flip-next {
+    transform: rotate(20deg) translateX(100vw) scale( 0.8 ) skew( -5deg, -10deg );
+    opacity: 0;
 }
+
+.gameboard .question-container.flip-prev {
+    transform: rotate( -20deg ) translateX( -100vw ) scale( 0.8 ) skew( 5deg, 10deg );
+    opacity: 0;
+}
+
+@media ( min-width : 600px ){
+    .gameboard .question-container.flip-next {
+        transform: rotate(20deg) translateX(10vw) scale( 0.8 ) skew( -5deg, -10deg );
+        opacity: 0;
+    }
+
+    .gameboard .question-container.flip-prev {
+        transform: rotate( -20deg ) translateX( -10vw ) scale( 0.8 ) skew( 5deg, 10deg );
+        opacity: 0;
+    }
+}
+
 
 .gameboard .question-container .question .question-text {
     font-size: 1.6rem;
