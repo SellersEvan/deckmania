@@ -1,0 +1,16 @@
+{
+    "name": "Deckmainia",
+    "short_name": "Deckmainia",
+    "theme_color": "#148ff5",
+    "background_color": "#148ff5",
+    "display": "standalone",
+    "scope": "/",
+    "description": "Card Decks for Every Situation",
+    "orientation": "any",
+    "icons": [
+        {
+            "src": "https://emojiapi.dev/api/v1/winking_face_with_tongue/512.png",
+            "sizes": "1024x1024"
+        }
+    ]
+}
