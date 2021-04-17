@@ -59,4 +59,6 @@ app.get( "/options", ( req, res ) => {
 	res.render( "options" );
 });
 
-app.listen( 3000 );
+app.listen( 3000, () => {
+	console.log( "Reilly's hotter than the Itailan French Bitch" )
+});

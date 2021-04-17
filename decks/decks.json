@@ -1,38 +1,10 @@
 [
     {
-        "name": "What am I?\nAnimals",
-        "id": "example_1",
+        "name": "Who's Mostly Likly too?",
+        "id": "couple_games",
         "description": "This is a descritpion of game 1",
         "is18Plus": false,
-        "questions": "example_1.json",
-        "emoji": "https://emojiapi.dev/api/v1/fox.svg"
-    }, {
-        "name": "What am I?\nHighway",
-        "id": "example_2",
-        "description": "This is a descritpion of game 2",
-        "is18Plus": false,
-        "questions": "example_1.json",
-        "emoji": "https://emojiapi.dev/api/v1/hot_face.svg"
-    }, {
-        "name": "What am I?\n80s Movies",
-        "id": "example_3",
-        "description": "This is a descritpion of game 3",
-        "is18Plus": false,
-        "questions": "example_1.json",
-        "emoji": "https://emojiapi.dev/api/v1/blue_heart.svg"
-    }, {
-        "name": "Example 2",
-        "id": "example_4",
-        "description": "This is a descritpion of game 3",
-        "is18Plus": true,
-        "questions": "example_1.json",
-        "emoji": "https://emojiapi.dev/api/v1/genie.svg"
-    }, {
-        "name": "Example 2",
-        "id": "example_5",
-        "description": "This is a descritpion of game 3",
-        "is18Plus": true,
-        "questions": "example_1.json",
-        "emoji": "https://emojiapi.dev/api/v1/loudly_crying_face.svg"
+        "questions": "who_would.json",
+        "emoji": "https://emojiapi.dev/api/v1/disguised_face.svg"
     }
 ]

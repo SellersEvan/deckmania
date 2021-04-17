@@ -226,7 +226,6 @@
     position: absolute;
     right: -10%;
     bottom: -10%;
-    filter: grayscale();
     opacity: 0.5;
     width: 75%;
 }
