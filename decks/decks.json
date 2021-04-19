@@ -3,8 +3,8 @@
         "name": "Who's Most Likely to?",
         "id": "couple_games",
         "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "who_would.json",
+        "is18Plus": true,
+        "questions": "who_would_adult.json",
         "emoji": "https://emojiapi.dev/api/v1/disguised_face.svg"
     }
 ]
