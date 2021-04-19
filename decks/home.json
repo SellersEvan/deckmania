@@ -13,7 +13,7 @@
     },
     {
         "title": "Guess the...",
-        "decksID": [ "guess_animals" ]
+        "decksID": [ "guess_animals", "quess_sport" ]
     },
     {
         "title": "What am I?",

@@ -17,50 +17,10 @@
     },
     {
         "name": "Guess the Sport",
-        "id": "basic_animals",
+        "id": "quess_sport",
         "description": "This is a descritpion of game 1",
         "is18Plus": false,
-        "questions": "basic_animals.json",
+        "questions": "guess_sport.json",
         "emoji": "https://emojiapi.dev/api/v1/tennis.svg"
-    },
-    {
-        "name": "Guess the Athlete",
-        "id": "basic_animals",
-        "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "basic_animals.json",
-        "emoji": "https://emojiapi.dev/api/v1/1st_place_medal.svg"
-    },
-    {
-        "name": "Guess the Movie",
-        "id": "basic_animals",
-        "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "basic_animals.json",
-        "emoji": "https://emojiapi.dev/api/v1/popcorn.svg"
-    },
-    {
-        "name": "Guess the TV Series",
-        "id": "basic_animals",
-        "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "basic_animals.json",
-        "emoji": "https://emojiapi.dev/api/v1/television.svg"
-    },
-    {
-        "name": "Guess the Food",
-        "id": "basic_animals",
-        "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "basic_animals.json",
-        "emoji": "https://emojiapi.dev/api/v1/hamburger.svg"
-    },
-    {
-        "name": "Guess the General",
-        "id": "basic_animals",
-        "description": "This is a descritpion of game 1",
-        "is18Plus": false,
-        "questions": "basic_animals.json",
-        "emoji": "https://emojiapi.dev/api/v1/statue_of_liberty.svg"
     }
 ]
