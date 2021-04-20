@@ -6,21 +6,26 @@
         "is18Plus": true,
         "questions": "who_would_adult.json",
         "emoji": "https://emojiapi.dev/api/v1/disguised_face.svg"
-    },
-    {
+    }, {
         "name": "Guess the Animal",
         "id": "guess_animals",
         "description": "This is a descritpion of game 1",
         "is18Plus": false,
         "questions": "guess_animal.json",
         "emoji": "https://emojiapi.dev/api/v1/mammoth.svg"
-    },
-    {
+    }, {
         "name": "Guess the Sport",
-        "id": "quess_sport",
+        "id": "guess_sport",
         "description": "This is a descritpion of game 1",
         "is18Plus": false,
         "questions": "guess_sport.json",
         "emoji": "https://emojiapi.dev/api/v1/tennis.svg"
+    }, {
+        "name": "Guess the Food",
+        "id": "guess_food",
+        "description": "This is a descritpion of game 1",
+        "is18Plus": false,
+        "questions": "guess_food.json",
+        "emoji": "https://emojiapi.dev/api/v1/hamburger.svg"
     }
 ]
