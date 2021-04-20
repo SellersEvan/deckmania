@@ -27,5 +27,12 @@
         "is18Plus": false,
         "questions": "guess_food.json",
         "emoji": "https://emojiapi.dev/api/v1/hamburger.svg"
+    }, {
+        "name": "Guess the Person",
+        "id": "guess_person",
+        "description": "This is a descritpion of game 1",
+        "is18Plus": false,
+        "questions": "guess_person.json",
+        "emoji": "https://emojiapi.dev/api/v1/moai.svg"
     }
 ]
