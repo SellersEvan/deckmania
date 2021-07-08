@@ -2,14 +2,14 @@
     {
         "name": "Who's Most Likely to?",
         "id": "couple_games",
-        "description": "This is a descritpion of game 1",
+        "description": "3 Ways to Play this Game...\nCharades - ",
         "is18Plus": true,
         "questions": "who_would_adult.json",
         "emoji": "https://emojiapi.dev/api/v1/disguised_face.svg"
     }, {
         "name": "Guess the Animal",
         "id": "guess_animals",
-        "description": "This is a descritpion of game 1",
+        "description": "4 Ways to Play this Game...<br><b>Draw</b> - Grab a whiteboard and get drawing, while everyone else guesss. Get it right, your up next.<br><b>Act</b> - Get up and move around, act out the word, while everyone laughs at you and guesses. Get it right, next up on stage.",
         "is18Plus": false,
         "questions": "guess_animal.json",
         "emoji": "https://emojiapi.dev/api/v1/mammoth.svg"
